@@ -31,7 +31,7 @@ span, a {
   color: #FF9900;
 }
 
-p {
+p, #footer {
   color: #7D7987;
 
   font-size: 14px;
@@ -40,4 +40,13 @@ p {
 
 #footer a + a {
   margin-left: 28px;
+}
+
+#line {
+  width: 568px;
+  height: 0px;
+
+  margin: 0 auto 8px;
+
+  border: 1px solid #ECEFF2;
 }
