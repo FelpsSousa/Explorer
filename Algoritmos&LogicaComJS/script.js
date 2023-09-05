@@ -1,9 +1,11 @@
-let items = [];
+let result = prompt("Adivinhe o número que estou pensando. Está entre 0 e 10.")
+const randomNumber = Math.round(Math.random() * 10)
 
-for (let item = 0; item < 10; item++) {
-  let itemName = prompt("Digite o item " + (item + 1))
+let xAttemps = 1;
 
-  items[item] = itemName
+while(Number(result) != randomNumber) {
+  result = prompt("Erro, tente novamente")
+  xAttemps++
 }
 
-alert(items)
+alert(`Parabéns! Você adivinhou o número em ${xAttemps} tentativas`)
