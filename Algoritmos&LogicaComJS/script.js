@@ -1,5 +1,7 @@
-alert("Hello World!")
+alert("Vamos executar a soma de dois números")
+let numberOne = prompt("Entre com o primeiro número: ")
+let numberTwo = prompt("Entre com o segundo número: ")
 
-let name = prompt("Qual o seu nome?")
+let sum = Number(numberOne) + Number(numberTwo)
 
-alert("Olá, " + name)
+alert("A soma dos numeros são: " + sum)
