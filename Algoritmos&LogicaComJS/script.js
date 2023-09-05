@@ -1,7 +1,19 @@
-alert("Vamos executar a soma de dois números")
-let numberOne = prompt("Entre com o primeiro número: ")
-let numberTwo = prompt("Entre com o segundo número: ")
+alert("Vamos seguir com operações matemáticas básicas.")
 
-let sum = Number(numberOne) + Number(numberTwo)
+numberOne = prompt("Entre com o primeiro número: ")
+numberTwo = prompt("Entre com o segundo número: ")
 
-alert("A soma dos numeros são: " + sum)
+numberOne = Number(numberOne)
+numberTwo = Number(numberTwo)
+
+const sum     = numberOne + numberTwo
+const sub     = numberOne - numberTwo
+const mult    = numberOne * numberTwo
+const div     = numberOne / numberTwo
+const restDiv = numberOne % numberTwo 
+
+alert("Soma: " + sum)
+alert("Subtração : " + sub)
+alert("Multiplicação:" + mult)
+alert("Divisão: " + div)
+alert("Resto da Divisão: " + restDiv)
