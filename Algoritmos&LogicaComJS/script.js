@@ -1,19 +1,18 @@
-alert("Vamos seguir com operações matemáticas básicas.")
+let student   = prompt("Qual o nome do(a) aluno(a)?")
+let testOne   = prompt("Qual a nota da primeira prova?")
+let testTwo   = prompt("Qual a nota da segunda prova?")
+let testThree = prompt("Qual a nota da terceira prova?")
 
-numberOne = prompt("Entre com o primeiro número: ")
-numberTwo = prompt("Entre com o segundo número: ")
+let average = (Number(testOne) + Number(testTwo) + Number(testThree)) / 3
 
-numberOne = Number(numberOne)
-numberTwo = Number(numberTwo)
+average = average.toFixed(2)
 
-const sum     = numberOne + numberTwo
-const sub     = numberOne - numberTwo
-const mult    = numberOne * numberTwo
-const div     = numberOne / numberTwo
-const restDiv = numberOne % numberTwo 
-
-alert("Soma: " + sum)
-alert("Subtração : " + sub)
-alert("Multiplicação:" + mult)
-alert("Divisão: " + div)
-alert("Resto da Divisão: " + restDiv)
+if (average > 6) {
+  alert("Parabéns " + student + "! Sua média foi de: " + average)
+} 
+else if (average < 3) {
+  alert("Reprovado")
+}
+else {
+  alert(student + " estude para sua prova de recuperação! Sua média foi de: " + average)
+}
