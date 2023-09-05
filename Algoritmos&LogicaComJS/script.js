@@ -1,11 +1,30 @@
-let result = prompt("Adivinhe o número que estou pensando. Está entre 0 e 10.")
-const randomNumber = Math.round(Math.random() * 10)
+let option
+let items = []
 
-let xAttemps = 1;
+while(option != 3)
+{
+  option = (prompt(`
+  Olá usuário! Digite a opção desejada.
 
-while(Number(result) != randomNumber) {
-  result = prompt("Erro, tente novamente")
-  xAttemps++
+  1. Cadastrar um item na lista 
+  2. Mostrar itens cadastrados
+  3. Sair do programa
+
+  `))
+
+  if (option == 1) {
+    let item = prompt("Digite o nome do item")
+    items.push(item)
+  }
+  else if (option == 2) {
+    if (items.length == 0) {
+      alert("Não existe itens cadastrados")
+    }
+    else {
+      alert(items)
+    }
+  }
+  else {
+    alert("Tchau")
+  }
 }
-
-alert(`Parabéns! Você adivinhou o número em ${xAttemps} tentativas`)
