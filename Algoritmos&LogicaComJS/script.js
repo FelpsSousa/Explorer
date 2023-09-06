@@ -19,20 +19,13 @@ const patients = [
   },
 ]
 
-let patientsNames = []
-let patientsAges = []
-let patientsWeigths = []
-let patientsHeight = []
+function calculateIMC(patient) {
+  return `
+    Paciente ${patient.name} possui o IMC de ${(patient.weight / ((patient.height / 100) ** 2)).toFixed(2)}
+  `
+}
 
 for (let patient of patients) {
-  patientsNames.push(patient.name)
-  patientsAges.push(patient.age)
-  patientsWeigths.push(patient.weight)
-  patientsHeight.push(patient.height)
+  let IMCmessage = calculateIMC(patient)
+  alert(IMCmessage)
 }
-
-for (let i = 0; i < patients.length; i++) {
-  alert(`Paciente ${patientsNames[i]} tem ${patientsAges[i]} anos, ${patientsHeight[i]}cm de altura 
-  e ${patientsWeigths[i]} Kg.`)
-}
-alert
