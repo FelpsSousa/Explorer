@@ -12,7 +12,6 @@ body {
   width: 1000px;
   margin: 0 auto;
   padding-top: 65px;
-
 }
 
 nav {
@@ -74,6 +73,7 @@ p {
   font-size: 14px;
   line-height: 28px;
   color: #7D7987;
+  
   margin: 40px 0;
 }
 
