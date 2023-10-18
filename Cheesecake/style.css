@@ -24,10 +24,15 @@ main {
 
   padding: 5.6rem 4rem;
   box-sizing: content-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
 }
 
 img {
   width: 100%;
+  margin-block: 3.2rem;
 }
 
 button {
@@ -50,7 +55,19 @@ h1, h2 {
   line-right: 3.6rem;
 }
 
+h2 {
+  margin-bottom: 3.2rem;
+}
+
 p, li, strong {
   font-size: 1.4rem;
   line-height: 1.8rem;
+}
+
+ul, ol {
+  padding-left: 3.2rem;
+}
+
+ul {
+  margin-bottom: 2.4rem;
 }
